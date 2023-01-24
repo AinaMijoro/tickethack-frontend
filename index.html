@@ -12,8 +12,8 @@
             <div id="header">
                 <h2 id="logo">Tickethack</h2>
                 <div id="menu">
-                    <a href="#cart" id="cart">Cart</a>
-                    <a href="#bookings" id="bookings">Bookings</a>
+                    <a href="cart.html" id="cart">Cart</a>
+                    <a href="bookings.html" id="bookings">Bookings</a>
                 </div>
             </div>
         </header>
@@ -26,18 +26,27 @@
                 <div id="left-card">
                     <div id="infos">
                         <div id="input-text">
-                            <input id="departure" placeholder="Departure" type="text" class="inputcard" />
-                            <input id="arrival" placeholder="Arrival" type="text" class="inputcard" />
+                            <input id="departureInput" placeholder="Departure" type="text" class="inputcard" />
+                            <input id="arrivalInput" placeholder="Arrival" type="text" class="inputcard" />
                         </div>
-                        <input type="date" id="date" value="" class="inputcard" />
+                        <input type="date" id="dateInput" value="2023/1/24" class="inputcard" />
                     </div>
                     <button id="searchButton" class="inputcard">Search</button>
                 </div>
                 <div id="right-card">
-                    <img id="train-logo" src="images/train.png" />
-                    <span>It's time to book your future trip! </span>
+                    <div id="tripResult">
+                        <span id="depart"></span>
+                        <span id="arrivee"></span>
+                        <span id="heure"></span>
+                        <span id="price"></span>
+                        
+                      </div>
+                      
+
+                    
+                    <span id="error"></span>
+                    
                 </div>
-            </div>
         </main>
     </body>
 </html>
