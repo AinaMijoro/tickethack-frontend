@@ -21,12 +21,16 @@ h2 {
 }
 h1 {
   text-align: center;
+  color: aliceblue;
 }
 h3 {
   text-align: center;
+  color: aliceblue;
 }
 main {
   background-image: url("./images/background.jpg");
+  height:100vh;
+  object-fit:fill;
 }
 #left {
   display: flex;
@@ -44,7 +48,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: yellow;
+  background-color: white;
   align-items: center;
   border-radius: 10px;
   height: 200px;
