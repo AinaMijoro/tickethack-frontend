@@ -1,4 +1,4 @@
-document.querySelector("#boutonSearch").addEventListener("click", function () {
+document.querySelector("#searchButton").addEventListener("click", function () {
     //   récupérer le nom de la ville du champ de saisie
     let myTrips = [document.querySelector("#departure").value,
                    document.querySelector ('#arrival').value,

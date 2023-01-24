@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div id="header">
-        <h2>Tickethack</h2>
-        <div>
-          <a href="#cart" id="cart">Cart</a>
-          <a href="#bookings" id="bookings">Bookings</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <h1>Explore the world effortlessly by train!</h1>
-      <h3>
-        Compare, book and enjoy cheap prices for train tickets: your journey
-        starts on Tickethack
-      </h3>
-      <div id="maincontainer">
-      <div id="left">
-        <div id="infos">
-          <div id="villes">
-            <input id="departure" placeholder="Departure" type="text" class="inputcart"/>
-            <input id="arrival"  placeholder="Arrival"  type="text"  class="inputcart" />
-          </div>
-
-          <input type="date" id="date"  class="inputcart" value=""/>
-        </div>
-        <button id="boutonSearch" class="inputcart">Search</button>
-      </div>
-      <div id="right">
-        <img src ="images/train.png" height="120px">
-        <span>It's time to book your future trip!</span>
-        <div id="tripResult">
-          <span id="Departure" ></span>
-
-        </div>
-      </div>
-    </div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <h2 id="logo">Tickethack</h2>
+                <div id="menu">
+                    <a href="#cart" id="cart">Cart</a>
+                    <a href="#bookings" id="bookings">Bookings</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="title">
+                <h1>Explore the world effortlessly by train!</h1>
+                <h3>Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack</h3>
+            </div>
+            <div id="main-container">
+                <div id="left-card">
+                    <div id="infos">
+                        <div id="input-text">
+                            <input id="departure" placeholder="Departure" type="text" class="inputcard" />
+                            <input id="arrival" placeholder="Arrival" type="text" class="inputcard" />
+                        </div>
+                        <input type="date" id="date" value="" class="inputcard" />
+                    </div>
+                    <button id="searchButton" class="inputcard">Search</button>
+                </div>
+                <div id="right-card">
+                    <img id="train-logo" src="images/train.png" />
+                    <span>It's time to book your future trip! </span>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
