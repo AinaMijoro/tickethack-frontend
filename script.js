@@ -1,4 +1,4 @@
-/* Select trip by departure, arrival and date */ 
+/* Select trip by departure, arrival and date */
 document.querySelector("#searchButton").addEventListener("click", function () {
     const myTrip = {
         departure: document.querySelector("#departureInput").value,
@@ -19,19 +19,19 @@ document.querySelector("#searchButton").addEventListener("click", function () {
                 const trip = data.Data[i];
                 //console.log(trip.departure)
 
-                const newRow = document.createElement("div")
+                const newRow = document.createElement("div");
 
                 document.querySelector("#right-card").innerHTML += `
                 <div class="tripRow">
                   <div class="trip-info">
                     <h3>
-                    <span id="depart">${trip.departure}</span>
-                    <span id="arrivee">${trip.arrival}</span>
-                    <span id="heure">${trip.date}: ${trip.date}</span>
-                    <span id="price">${trip.price}€</span>
+                    <span>Paris</span> >
+                    <span>Lyon</span>
+                    <span>18h48</span>
+                    <span>81€</span>
                     </h3>
                   </div>
-                <button id="Book">Book</button>
+                  <span><button class="book">Book</button></span>
                 </div>`;
             }
         });

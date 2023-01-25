@@ -103,7 +103,7 @@ main {
 #departure,
 #arrival {
     margin-bottom: 2px;
-    box-shadow: 0px 0px 1px 1px #dfe1e5;
+    box-shadow: 0px 0px 2px 2px #dfe1e5;
 }
 
 #infos {
@@ -135,16 +135,33 @@ main {
     padding: 20px;
     overflow:scroll;
     overflow-x:hidden;
+    border: 1px solid blue;
 }
 
 .tripRow{
     display: flex;
     background-color: #f0f1f1;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 2px 2px #dfe1e5;
+    border-radius: 2px;
+    border: none;
 }
 
 .trip-info{
+    font-size: 14px;
+}
 
+.book{
+    background-color: #459e85;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 3px 0;
+    border: none;
 }
 
 /* RESPONSIVE */
