@@ -1,7 +1,7 @@
 document.querySelector("#searchButton").addEventListener("click", function () {
-  const myTrip = [document.querySelector("#departureInput").value,
-  document.querySelector("#arrivalInput").value,
-  document.querySelector("#dateInput").value,] ;
+  const myTrip = {departure: document.querySelector("#departureInput").value,
+  arrival: document.querySelector("#arrivalInput").value,
+  date: document.querySelector("#dateInput").value,};
   fetch("http://localhost:3000/trips", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
