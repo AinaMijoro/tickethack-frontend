@@ -28,3 +28,4 @@ document.querySelector("#searchButton").addEventListener("click", function () {
         deleteCity();
       });
   });
+
