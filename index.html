@@ -29,24 +29,24 @@
                             <input id="departureInput" placeholder="Departure" type="text" class="inputcard" />
                             <input id="arrivalInput" placeholder="Arrival" type="text" class="inputcard" />
                         </div>
-                        <input type="date" id="dateInput" value="2023/1/24" class="inputcard" />
+                        <input type="date" id="dateInput" class="inputcard" />
                     </div>
                     <button id="searchButton" class="inputcard">Search</button>
                 </div>
                 <div id="right-card">
-                    <div id="tripResult">
-                        <span id="depart"></span>
-                        <span id="arrivee"></span>
-                        <span id="heure"></span>
-                        <span id="price"></span>
-                        
+                    <div class="tripRow">
+                        <div class="trip-info">
+                          <h3>
+                          <span id="depart">${trip.departure}</span>
+                          <span id="arrivee">${trip.arrival}</span>
+                          <span id="heure">${trip.date}: ${trip.date}</span>
+                          <span id="price">${trip.price}€</span>
+                          </h3>
+                        </div>
+                      <button id="Book">Book</button>
                       </div>
-                      
-
-                    
-                    <span id="error"></span>
-                    
                 </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

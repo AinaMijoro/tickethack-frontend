@@ -133,6 +133,18 @@ main {
     height: 400px;
     width: 300px;
     padding: 20px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+.tripRow{
+    display: flex;
+    background-color: #f0f1f1;
+    margin-bottom: 8px;
+}
+
+.trip-info{
+
 }
 
 /* RESPONSIVE */
