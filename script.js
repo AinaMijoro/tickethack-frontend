@@ -1,4 +1,4 @@
-/* Select trip by departure, arrival and date */
+/* SELECT trip by departure, arrival and date */
 document.querySelector("#searchButton").addEventListener("click", function () {
     const myTrip = {
         departure: document.querySelector("#departureInput").value,
@@ -17,8 +17,6 @@ document.querySelector("#searchButton").addEventListener("click", function () {
         .then((data) => {
             for (let i = 0; i < data.Data.length; i++) {
                 const trip = data.Data[i];
-                //console.log(trip.departure)
-
                 const newRow = document.createElement("div");
 
                 document.querySelector("#right-card").innerHTML += `
@@ -35,4 +33,27 @@ document.querySelector("#searchButton").addEventListener("click", function () {
                 </div>`;
             }
         });
+});
+
+/* ADD trip to cart */
+document.querySelectorAll(".book").forEach((button) => {
+    button.addEventListener("click", function () {
+        const trip = {
+            departure: document.querySelector("#departureInput").value,
+            arrival: document.querySelector("#arrivalInput").value,
+            date: document.querySelector("#dateInput").value,
+        };
+
+        fetch("http://localhost:3000/cart", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(trip),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+            });
+    });
 });
